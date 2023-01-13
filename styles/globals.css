@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+}
+
+.backgroundImage {
+  background-image: url("../public/backgroundImage.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
