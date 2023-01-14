@@ -5,7 +5,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
-import Link from "next/link";
+import Link from "next/Link";
 
 function DrawerComponent() {
   const [openDrawer, setOpenDrawer] = useState(false);

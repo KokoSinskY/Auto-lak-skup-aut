@@ -6,6 +6,6 @@ a {
   background-image: url("../public/backgroundImage.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 200vh;
+  height: 80vh;
   background-attachment: fixed;
 }

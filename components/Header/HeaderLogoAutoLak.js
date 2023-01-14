@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Image from "next/image";
+import Image from "next/Image";
 
 const HeaderLogoAutoLak = () => {
   return (
