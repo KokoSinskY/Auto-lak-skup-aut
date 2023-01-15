@@ -6,7 +6,7 @@ import HeaderLogoSkupAut from "./HeaderLogoSkupAut";
 
 const Header = () => {
   return (
-    <Box sx={{ backgroundColor: "#00005C" }}>
+    <Box sx={{ backgroundColor: "#243763" }}>
       <Grid container>
         <HeaderLogoAutoLak />
         <HeaderLogoSkupAut />

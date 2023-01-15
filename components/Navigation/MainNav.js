@@ -1,5 +1,5 @@
 import AppBar from "@mui/material/AppBar";
-import ToolBar from "@mui/material/ToolBar";
+import ToolBar from "@mui/material/Toolbar";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Link from "next/Link";

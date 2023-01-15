@@ -2,6 +2,7 @@ import Header from "../components/Header/Header";
 import MainNav from "../components/Navigation/MainNav";
 import AdditionalNav from "../components/Navigation/AdditionalNav/AdditionalNav";
 import AboutUs from "../components/AboutUs";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -9,13 +10,16 @@ const HomePage = () => {
       <header>
         <Header />
       </header>
-      <div className="backgroundImage">
-        <nav>
-          <MainNav />
-        </nav>
+      <nav className="backgroundImage">
+        <MainNav />
         <AdditionalNav />
+      </nav>
+      <section>
         <AboutUs />
-      </div>
+      </section>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
