@@ -1,5 +1,21 @@
+import Header from "../components/Header/Header";
+import MainNav from "../components/Navigation/MainNav";
+import SkupAutCard from "../components/SkupAutCard";
+
 const Skup = () => {
-  return <h1>Skup</h1>;
+  return (
+    <div>
+      <header>
+        <Header />
+      </header>
+      <nav>
+        <MainNav />
+      </nav>
+      <section>
+        <SkupAutCard />
+      </section>
+    </div>
+  );
 };
 
 export default Skup;

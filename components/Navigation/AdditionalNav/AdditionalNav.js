@@ -34,7 +34,7 @@ const AdditionalNav = () => {
               component="img"
               height="450"
               image="/blacharstwoImage.webp"
-              alt="green iguana"
+              alt="car painting"
             />
             <CardContent
               sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
