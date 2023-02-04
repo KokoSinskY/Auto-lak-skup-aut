@@ -1,6 +1,8 @@
 import Header from "../components/Header/Header";
 import MainNav from "../components/Navigation/MainNav";
+import TypeOfCarsWeBuy from "../components/TypeOfCarsWeBuy";
 import MyCard from "../components/UI/MyCard";
+
 import data from "../src/data.js";
 
 const Skup = () => {
@@ -19,6 +21,7 @@ const Skup = () => {
           cardImageAlt={data[0].cardImageAlt}
           cardContent={data[0].cardContent}
         />
+        <TypeOfCarsWeBuy />
       </section>
     </div>
   );

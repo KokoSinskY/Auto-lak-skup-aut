@@ -9,3 +9,7 @@ a {
   /* height: 80vh; */
   background-attachment: fixed;
 }
+
+.carCircle {
+  border-radius: 50%;
+}
