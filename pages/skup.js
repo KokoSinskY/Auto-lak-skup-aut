@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header";
 import MainNav from "../components/Navigation/MainNav";
-import TypeOfCarsWeBuy from "../components/TypeOfCarsWeBuy";
+import TypeOfCarsWeBuy from "../components/TypeOfCarsWeBuy/TypeOfCarsWeBuy";
 import MyCard from "../components/UI/MyCard";
 
 import data from "../src/data.js";
