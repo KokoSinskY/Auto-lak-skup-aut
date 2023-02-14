@@ -36,8 +36,8 @@ const HeaderLogoAutoLak = () => {
           </Grid>
         </Grid>
         <Grid sx={{ display: "flex", alignItems: "center" }}>
-          <Typography color="white" variant="h3" component="h1">
-            123-456-789
+          <Typography color="primary" variant="h3" component="h1">
+            123 456 789
           </Typography>
         </Grid>
       </Grid>

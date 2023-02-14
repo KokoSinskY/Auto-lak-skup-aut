@@ -15,8 +15,8 @@ const HeaderLogoSkupAut = () => {
           </Typography>
         </Grid>
         <Grid>
-          <Typography color="white" variant="h3" component="h1">
-            987-654-321
+          <Typography color="primary" variant="h3" component="h1">
+            987 654 321
           </Typography>
         </Grid>
       </Grid>
