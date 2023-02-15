@@ -7,18 +7,27 @@ import Link from "next/Link";
 
 const AboutUs = () => {
   return (
-    <Grid container sx={{ justifyContent: "space-around", py: 3, backgroundColor: "#AD8E70" }}>
+    <Grid
+      className="homeBottomBG"
+      container
+      sx={{
+        justifyContent: "space-around",
+        py: 3,
+      }}
+    >
       <Grid container item xl={6} lg={6} md={8} sm={10} mx={2}>
-        <Paper elevation={4} sx={{ p: 4, backgroundColor: "#FFEBB7" }}>
+        <Paper elevation={0} className="border" sx={{ p: 4 }}>
           <Box sx={{ display: "flex", p: 2 }}>
             <Typography
               variant="h2"
               component="h2"
               sx={{
-                p: 2,
+                px: 1.5,
+                py: 1,
                 border: "2px solid #FF6E31",
                 backgroundColor: "#FF6E31",
                 borderRadius: "30px",
+                boxShadow: "4px 4px 15px 0px rgba(66, 68, 90, 1)",
               }}
             >
               O NAS
@@ -54,6 +63,7 @@ const AboutUs = () => {
                   border: "2px solid #FF6E31",
                   borderRadius: "30px",
                   backgroundColor: "#FF6E31",
+                  boxShadow: "4px 4px 15px 0px rgba(66, 68, 90, 1)",
                 }}
               >
                 SKONTAKTUJ SIĘ
