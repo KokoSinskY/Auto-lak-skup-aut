@@ -27,7 +27,7 @@ const MainNav = () => {
               <Link href="/skup">
                 <Button size="large">Skup</Button>
               </Link>
-              <Link href="/blachastwo-i-lakiernictwo">
+              <Link href="/blacharstwo-i-lakiernictwo">
                 <Button size="large">Blacharstwo i lakiernictwo</Button>
               </Link>
               <Link href="/kontakt">

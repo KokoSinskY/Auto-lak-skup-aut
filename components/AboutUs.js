@@ -35,7 +35,7 @@ const AboutUs = () => {
           </Box>
           <Box px={2}>
             <Typography variant="h2" component="h3">
-              Auto-Lak Skup Aut Łódź
+              Auto-Lak i Skup Aut Łódź
             </Typography>
             <Divider />
           </Box>

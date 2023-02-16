@@ -1,13 +1,13 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header/Header";
-import MainNav from "../components/Navigation/MainNav";
-import TypeOfCarsWeBuy from "../components/TypeOfCarsWeBuy/TypeOfCarsWeBuy";
 import ListComponent from "../components/ListComponent";
+import MainNav from "../components/Navigation/MainNav";
+import TypeOfCarsWeRepair from "../components/TypeOfCarsWeRepair";
 import MyCard from "../components/UI/MyCard";
 
-import data from "../src/data.js";
+import data from "../src/data";
 
-const Skup = () => {
+const Blacharstwo_i_lakiernictwo = () => {
   return (
     <div>
       <header>
@@ -19,18 +19,18 @@ const Skup = () => {
         </nav>
         <section>
           <MyCard
-            cardHeader={data[0].carsData[0].cardHeader}
+            cardHeader={data[0].carsData[1].cardHeader}
             cardImage={data[0].carsData[0].cardImage}
             cardImageAlt={data[0].carsData[0].cardImageAlt}
-            cardContent={data[0].carsData[0].cardContent}
+            cardContent={data[0].carsData[1].cardContent}
           />
         </section>
       </div>
       <section>
-        <TypeOfCarsWeBuy />
+        <TypeOfCarsWeRepair />
       </section>
       <section>
-        <ListComponent header={"Skupujemy auta:"} data={data[0].listOfCarsWeBuyData} />
+        <ListComponent header={"Wykonujemy:"} data={data[0].listOfRepairsData} />
       </section>
       <footer>
         <Footer />
@@ -39,4 +39,4 @@ const Skup = () => {
   );
 };
 
-export default Skup;
+export default Blacharstwo_i_lakiernictwo;

@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Image from "next/Image";
 
-const SingleTypeOfCar = (props) => {
+const SingleRoundedImage = (props) => {
   return (
     <Grid item container lg={4} md={4} sm={10} sx={{ justifyContent: "center" }}>
       <Grid className="carsCircleWrapper">
@@ -41,4 +41,4 @@ const SingleTypeOfCar = (props) => {
   );
 };
 
-export default SingleTypeOfCar;
+export default SingleRoundedImage;

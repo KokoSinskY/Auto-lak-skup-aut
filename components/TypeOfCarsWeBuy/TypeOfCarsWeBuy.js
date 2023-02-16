@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
-import SingleTypeOfCar from "./SingleTypeOfCar";
+import SingleRoundedImage from "./SingleRoundedImage";
 
 const TypeOfCarsWeBuy = () => {
   return (
@@ -13,13 +13,13 @@ const TypeOfCarsWeBuy = () => {
         </Typography>
       </Grid>
       <Grid container sx={{ justifyContent: "center", py: 6 }}>
-        <SingleTypeOfCar src={"/carCircle.webp"} alt={"Car circle"} content={"Osobowe"} />
-        <SingleTypeOfCar
+        <SingleRoundedImage src={"/carCircle.webp"} alt={"Car circle"} content={"Osobowe"} />
+        <SingleRoundedImage
           src={"/deliveryCarCircle.webp"}
           alt={"Delivery car circle"}
           content={"Dostawcze"}
         />
-        <SingleTypeOfCar
+        <SingleRoundedImage
           src={"/offRoadCarCircle.webp"}
           alt={"Off-road car circle"}
           content={"Terenowe"}

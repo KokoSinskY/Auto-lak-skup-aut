@@ -2,7 +2,7 @@ const data = [
   {
     carsData: [
       {
-        id: 1,
+        id: 0,
         cardHeader: "Skup Aut Łódź",
         cardImage: "/skupImageRedCar.webp",
         cardImageAlt: "Red Car",
@@ -10,40 +10,82 @@ const data = [
           "Prowadzimy skup samochodów na terenie całej Łodzi oraz okolic. Dojazd do klienta i oględziny w wyznaczonym miejscu, bez dodatkowych kosztów. Zakup auta natychmiast po ustaleniu ceny, gotówka od ręki. Odbieramy auto własną lawetą - nie musisz się martwić transportem. Wszelkie formalności załatwiamy wygodnie na miejscu.",
       },
       {
-        id: 2,
+        id: 1,
         cardHeader: "Blacharstwo i lakiernictwo",
         cardContent:
-          "Zajmujemy się także kompleksową naprawą aut powypadkowych od A do Z. Wykonujemy profesjonalne naprawy blacharsko - lakiernicze oraz drobne naprawy wraz z diagnostyką komputerową.",
+          "Zajmujemy się także kompleksową naprawą aut powypadkowych od A do Z. Wykonujemy profesjonalne naprawy blacharsko - lakiernicze, konserwacje antykorozyjne w tym wymianę progów oraz drobne naprawy wraz z diagnostyką komputerową.",
       },
     ],
-    paperData: [
+    listOfCarsWeBuyData: [
       {
-        id: 1,
+        id: 0,
         content: "Uszkodzone, rozbite",
       },
       {
-        id: 2,
+        id: 1,
         content: "Zmęczone życiem",
       },
       {
-        id: 3,
+        id: 2,
         content: "Zaniedbane",
       },
       {
-        id: 4,
+        id: 3,
         content: "Bez przeglądu",
       },
       {
-        id: 5,
+        id: 4,
         content: "Bez OC",
       },
       {
-        id: 6,
+        id: 5,
         content: "Bez prawa rejestracji",
       },
       {
-        id: 7,
+        id: 6,
         content: "Każdą markę",
+      },
+    ],
+    listOfRepairsData: [
+      {
+        id: 0,
+        content: "Profesjonalne naprawy Blacharsko - Lakiernicze",
+      },
+      {
+        id: 1,
+        content: "Kompleksowa naprawa aut powypadkowych od A do Z",
+      },
+      {
+        id: 2,
+        content: "Naprawy bieżące i powypadkowe",
+      },
+      {
+        id: 3,
+        content: "Naprawy bezgotówkowe",
+      },
+      {
+        id: 4,
+        content: "Konserwacja antykorozyjna podwozia",
+      },
+      {
+        id: 5,
+        content: "Wymiana progów",
+      },
+      {
+        id: 6,
+        content: "Wymiana reperaturek tylnych błotników",
+      },
+      {
+        id: 7,
+        content: "Naprawy powypadkowe aut z OC sprawcy",
+      },
+      {
+        id: 8,
+        content: "Naprawy powypadkowe aut z AC",
+      },
+      {
+        id: 9,
+        content: "Diagnostyka komputerowa",
       },
     ],
   },

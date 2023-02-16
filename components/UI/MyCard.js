@@ -8,7 +8,7 @@ import Container from "@mui/material/Container";
 const MyCard = (props) => {
   return (
     <Container sx={{ display: "flex", justifyContent: "center" }}>
-      <Card sx={{ maxWidth: 700, backgroundColor: "#FFEBB7", p: 0.5, marginBottom: 5 }}>
+      <Card sx={{ maxWidth: 700, p: 0.5, marginBottom: 5 }}>
         <CardHeader
           sx={{ display: "flex", textAlign: "center" }}
           title={
