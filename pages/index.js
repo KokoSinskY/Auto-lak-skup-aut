@@ -3,6 +3,7 @@ import MainNav from "../components/Navigation/MainNav";
 import AdditionalNav from "../components/Navigation/AdditionalNav/AdditionalNav";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
+import Map from "../components/Map";
 
 const HomePage = () => {
   return (
@@ -14,9 +15,14 @@ const HomePage = () => {
         <MainNav />
         <AdditionalNav />
       </nav>
-      <section>
-        <AboutUs />
-      </section>
+      <main>
+        <section>
+          <AboutUs />
+        </section>
+        <section>
+          <Map />
+        </section>
+      </main>
       <footer>
         <Footer />
       </footer>
