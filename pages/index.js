@@ -4,6 +4,7 @@ import AdditionalNav from "../components/Navigation/AdditionalNav/AdditionalNav"
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import Map from "../components/Map";
+import ImageSlider from "../components/ImageSlider";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,9 @@ const HomePage = () => {
       <main>
         <section>
           <AboutUs />
+        </section>
+        <section>
+          <ImageSlider />
         </section>
         <section>
           <Map />
