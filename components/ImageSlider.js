@@ -3,6 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/Image";
 import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+
+import data from "../src/data";
 
 const ImageSlider = () => {
   const settings = {
@@ -11,21 +14,18 @@ const ImageSlider = () => {
     autoplay: true,
     infinite: true,
     centerMode: true,
-    speed: 5000,
-    autoplaySpeed: 8000,
-    cssEase: "linear",
+    speed: 3500,
+    autoplaySpeed: 5000,
+    cssEase: "ease-in-out",
     slidesToShow: 2,
     slidesToScroll: 1,
     pauseOnDotsHover: true,
+    pauseOnHover: false,
+    focusOnSelect: true,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         },
@@ -34,26 +34,15 @@ const ImageSlider = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <Grid container sx={{ alignItems: "center" }}>
-        <Image src="/SkupJag.webp" alt="Black Car" width={900} height={600} />
-      </Grid>
-      <Grid container sx={{ justifyContent: "center" }}>
-        <Image src="/SkupMeg.webp" alt="Black Car" width={900} height={600} />
-      </Grid>
-      <Grid container sx={{ justifyContent: "center" }}>
-        <Image src="/BlachGolBf.webp" alt="Black Car" width={900} height={600} />
-      </Grid>
-      <Grid container sx={{ justifyContent: "center" }}>
-        <Image src="/BlachGolAf.webp" alt="Black Car" width={900} height={600} />
-      </Grid>
-      <Grid container sx={{ justifyContent: "center" }}>
-        <Image src="/SkupFia.webp" alt="Black Car" width={900} height={600} />
-      </Grid>
-      <Grid container sx={{ justifyContent: "center" }}>
-        <Image src="/BlachBM.webp" alt="Black Car" width={900} height={600} />
-      </Grid>
-    </Slider>
+    <Grid mt={2}>
+      <Slider {...settings}>
+        {data[0].imageSlider.map((item) => (
+          <Grid key={item.id}>
+            <Image src={item.src} alt={item.alt} width={900} height={600} />
+          </Grid>
+        ))}
+      </Slider>
+    </Grid>
   );
 };
 

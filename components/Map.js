@@ -22,12 +22,6 @@ const Map = () => {
       <Grid>
         <GoogleMap zoom={15.5} center={mapLocation} mapContainerClassName="map-container">
           <MarkerF position={mapLocation} />
-          <InfoWindow position={mapLocation}>
-            <div style={divStyle}>
-              <h2>Auto-Lak</h2>
-              <p>Grunwaldzka 33a</p>
-            </div>
-          </InfoWindow>
         </GoogleMap>
       </Grid>
     </Box>

@@ -10,7 +10,7 @@ const AdditionalNav = () => {
     <Grid container sx={{ justifyContent: "space-around", p: 4 }}>
       <Link href="/skup">
         <Card sx={{ maxWidth: 380, backgroundColor: "#FFEBB7", p: 0.5, marginBottom: 5 }}>
-          <CardMedia component="img" height="450" image="/skupImage.webp" alt="car" />
+          <CardMedia component="img" height="450" image="/additionalNavSkup.webp" alt="car" />
           <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <Typography variant="h1" component="div" sx={{ pb: 2 }}>
               SKUP AUT

@@ -15,26 +15,31 @@ const AboutUs = () => {
         py: 3,
       }}
     >
-      <Grid container item xl={6} lg={6} md={8} sm={10} mx={2}>
+      <Grid container item xl={4} lg={4} md={6} sm={10} mx={2}>
         <Paper elevation={0} className="border" sx={{ p: 4 }}>
           <Box sx={{ display: "flex", p: 2 }}>
             <Typography
               variant="h2"
               component="h2"
               sx={{
-                px: 1.5,
-                py: 1,
-                border: "2px solid #FF6E31",
-                backgroundColor: "#FF6E31",
-                borderRadius: "30px",
-                boxShadow: "4px 4px 15px 0px rgba(66, 68, 90, 1)",
+                px: 1.3,
+                py: 0.8,
+                border: "2px solid #FFEBB7",
+                backgroundColor: "#FFEBB7",
+                borderRadius: "15px",
+                boxShadow: "3px 3px 8px 0px rgba(66, 68, 90, 1)",
+                fontWeight: "400",
               }}
             >
               O NAS
             </Typography>
           </Box>
           <Box px={2}>
-            <Typography variant="h2" component="h3">
+            <Typography
+              variant="h2"
+              component="h3"
+              sx={{ color: "#ed6328", fontWeight: "500" }}
+            >
               Auto-Lak i Skup Aut Łódź
             </Typography>
             <Divider />
@@ -58,12 +63,13 @@ const AboutUs = () => {
                 variant="h2"
                 component="h2"
                 sx={{
-                  p: 2,
+                  p: 1.5,
                   color: "black",
-                  border: "2px solid #FF6E31",
-                  borderRadius: "30px",
-                  backgroundColor: "#FF6E31",
-                  boxShadow: "4px 4px 15px 0px rgba(66, 68, 90, 1)",
+                  border: "2px solid #FFEBB7",
+                  borderRadius: "20px",
+                  backgroundColor: "#FFEBB7",
+                  boxShadow: "3px 3px 8px 0px rgba(66, 68, 90, 1)",
+                  fontWeight: "400",
                 }}
               >
                 SKONTAKTUJ SIĘ
@@ -71,6 +77,18 @@ const AboutUs = () => {
             </Link>
           </Box>
         </Paper>
+      </Grid>
+      <Grid
+        container
+        item
+        xl={4}
+        lg={4}
+        md={4}
+        sm={4}
+        mx={4}
+        sx={{ justifyContent: "center" }}
+      >
+        <img className="aboutUsImage" src="aboutUsImage.svg" />
       </Grid>
     </Grid>
   );

@@ -88,6 +88,38 @@ const data = [
         content: "Diagnostyka komputerowa",
       },
     ],
+    imageSlider: [
+      {
+        id: 0,
+        src: "/SkupJag.webp",
+        alt: "Brown Jaguar",
+      },
+      {
+        id: 1,
+        src: "/SkupMeg.webp",
+        alt: "Renault Megane",
+      },
+      {
+        id: 2,
+        src: "/BlachGolBf.webp",
+        alt: "Black crashed VW Golf",
+      },
+      {
+        id: 3,
+        src: "/BlachGolAf.webp",
+        alt: "Black VW Golf",
+      },
+      {
+        id: 4,
+        src: "/SkupFia.webp",
+        alt: "Crashed Fiat",
+      },
+      {
+        id: 5,
+        src: "/BlachBM.webp",
+        alt: "Black BMW",
+      },
+    ],
   },
 ];
 
