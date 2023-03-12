@@ -9,8 +9,8 @@ const Map = () => {
     googleMapsApiKey: "AIzaSyBE-tgBICt919T6lwteqv8CF9L1Q8tnA6Q",
   });
 
-  const mapLocation = { lat: 51.796242, lng: 19.430085 };
-  const infoWindowLocation = { lat: 51.796736, lng: 19.430095 };
+  const mapLocation = { lat: 51.795831, lng: 19.429909 };
+  const infoWindowLocation = { lat: 51.795984, lng: 19.429904 };
 
   const [showingInfoWindow, setShowingInfoWindow] = useState(false);
 
@@ -25,27 +25,25 @@ const Map = () => {
   if (!isLoaded) return <div>Loading...</div>;
 
   return (
-    <Grid>
-      <Grid container item xl={6} lg={6} md={6} sm={12}>
-        <GoogleMap zoom={15.5} center={mapLocation} mapContainerClassName="map-container">
-          <MarkerF onClick={onMarkerClick} position={mapLocation} />
-          {!showingInfoWindow ? null : (
-            <InfoWindowF
-              position={infoWindowLocation}
-              visible={showingInfoWindow}
-              onCloseClick={() => setShowingInfoWindow(false)}
-            >
-              <Paper>
-                <Typography variant="headline" component="h2">
-                  Auto-Lak
-                </Typography>
-                <Typography component="div">ul. Grunwaldzka 33a</Typography>
-                <Typography component="div">793-308-669</Typography>
-              </Paper>
-            </InfoWindowF>
-          )}
-        </GoogleMap>
-      </Grid>
+    <Grid container item xl={6} lg={6} md={6} sm={12}>
+      <GoogleMap zoom={15.5} center={mapLocation} mapContainerClassName="map-container">
+        <MarkerF onClick={onMarkerClick} position={mapLocation} />
+        {!showingInfoWindow ? null : (
+          <InfoWindowF
+            position={infoWindowLocation}
+            visible={showingInfoWindow}
+            onCloseClick={() => setShowingInfoWindow(false)}
+          >
+            <Paper>
+              <Typography variant="headline" component="h2">
+                Auto-Lak
+              </Typography>
+              <Typography component="div">ul. Grunwaldzka 33a</Typography>
+              <Typography component="div">793-308-669</Typography>
+            </Paper>
+          </InfoWindowF>
+        )}
+      </GoogleMap>
     </Grid>
   );
 };
