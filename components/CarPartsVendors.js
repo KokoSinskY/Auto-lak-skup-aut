@@ -6,27 +6,24 @@ import Grid from "@mui/material/Grid";
 
 import data from "../src/data";
 
-const ImageSlider = () => {
+const CarPartsVendors = () => {
   const settings = {
-    dots: true,
+    dots: false,
     arrows: false,
+    accessibility: false,
     autoplay: true,
-    infinite: true,
-    centerMode: true,
-    speed: 3500,
-    autoplaySpeed: 5000,
-    cssEase: "ease-in-out",
-    slidesToShow: 2,
+    draggable: false,
+    speed: 5000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    slidesToShow: 5,
     slidesToScroll: 1,
-    pauseOnDotsHover: true,
     pauseOnHover: false,
-    focusOnSelect: true,
-    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.5,
         },
       },
     ],
@@ -35,9 +32,9 @@ const ImageSlider = () => {
   return (
     <Grid mt={2}>
       <Slider {...settings}>
-        {data[0].imageSlider.map((item) => (
-          <Grid key={item.id}>
-            <Image src={item.src} alt={item.alt} width={900} height={600} />
+        {data[0].carPartsVendors.map((item) => (
+          <Grid key={item.id} sx={{ pl: 8, pr: 8 }}>
+            <Image src={item.src} alt={item.alt} width={200} height={100} />
           </Grid>
         ))}
       </Slider>
@@ -45,4 +42,4 @@ const ImageSlider = () => {
   );
 };
 
-export default ImageSlider;
+export default CarPartsVendors;

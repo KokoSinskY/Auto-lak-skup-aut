@@ -9,7 +9,19 @@ const AdditionalNav = () => {
   return (
     <Grid container sx={{ justifyContent: "space-around", p: 4 }}>
       <Link href="/skup">
-        <Card sx={{ maxWidth: 380, backgroundColor: "#FFEBB7", p: 0.5, marginBottom: 5 }}>
+        <Card
+          sx={{
+            maxWidth: 380,
+            backgroundColor: "#FFEBB7",
+            p: 0.5,
+            marginBottom: 5,
+            transition: "0.5s",
+            "&:hover": {
+              transform: "translateY(-20px)",
+              transition: "0.5s",
+            },
+          }}
+        >
           <CardMedia component="img" height="450" image="/additionalNavSkup.webp" alt="car" />
           <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <Typography variant="h1" component="div" sx={{ pb: 2 }}>
@@ -22,7 +34,19 @@ const AdditionalNav = () => {
         </Card>
       </Link>
       <Link href="/blacharstwo-i-lakiernictwo">
-        <Card sx={{ maxWidth: 380, backgroundColor: "#FFEBB7", p: 0.5, marginBottom: 5 }}>
+        <Card
+          sx={{
+            maxWidth: 380,
+            backgroundColor: "#FFEBB7",
+            p: 0.5,
+            marginBottom: 5,
+            transition: "0.5s",
+            "&:hover": {
+              transform: "translateY(-20px)",
+              transition: "0.5s",
+            },
+          }}
+        >
           <CardMedia
             component="img"
             height="450"

@@ -96,7 +96,6 @@ const HomePageContact = () => {
           component="h2"
           color="primary"
           sx={{
-            pl: 1,
             fontWeight: 600,
             fontSize: "2em",
           }}

@@ -120,6 +120,38 @@ const data = [
         alt: "Black BMW",
       },
     ],
+    carPartsVendors: [
+      {
+        id: 0,
+        src: "/auto-partner.png",
+        alt: "Auto-Partner",
+      },
+      {
+        id: 1,
+        src: "/gordon.svg",
+        alt: "Gordon",
+      },
+      {
+        id: 2,
+        src: "/hart.png",
+        alt: "Hart",
+      },
+      {
+        id: 3,
+        src: "/inter-cars.png",
+        alt: "Inter-Cars",
+      },
+      {
+        id: 4,
+        src: "/inter-team.png",
+        alt: "Inter-Team",
+      },
+      {
+        id: 5,
+        src: "/polcar.svg",
+        alt: "Polcar",
+      },
+    ],
   },
 ];
 

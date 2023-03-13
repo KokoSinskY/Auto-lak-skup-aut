@@ -7,6 +7,9 @@ import Footer from "../components/Footer";
 import Map from "../components/Map";
 import ImageSlider from "../components/ImageSlider";
 import HomePageContact from "../components/HomePageContact";
+import CarPartsVendors from "../components/CarPartsVendors";
+
+import { Parallax } from "react-parallax";
 
 const HomePage = () => {
   return (
@@ -14,15 +17,18 @@ const HomePage = () => {
       <header>
         <Header />
       </header>
-      <nav className="backgroundImage">
-        <MainNav />
-        <AdditionalNav />
+      <nav>
+        <Parallax bgImage="./backgroundImage.webp" bgImageAlt="background" strength={300}>
+          <MainNav />
+          <AdditionalNav />
+        </Parallax>
       </nav>
       <main>
         <section>
           <AboutUs />
         </section>
         <section>
+          <CarPartsVendors />
           <ImageSlider />
         </section>
         <section>
