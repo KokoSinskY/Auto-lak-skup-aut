@@ -24,10 +24,10 @@ const AboutUs = () => {
               sx={{
                 px: 1.3,
                 py: 0.8,
-                border: "2px solid #FFEBB7",
-                backgroundColor: "#FFEBB7",
-                borderRadius: "15px",
-                boxShadow: "3px 3px 8px 0px rgba(66, 68, 90, 1)",
+                border: "2px solid rgba(191, 191, 242, 0.5)",
+                backgroundColor: "rgba(191, 191, 242, 0.3)",
+                borderRadius: "13px",
+                boxShadow: "2px 2px 4px 0px rgba(66, 68, 90, 0.7)",
                 fontWeight: "400",
               }}
             >
@@ -65,11 +65,16 @@ const AboutUs = () => {
                 sx={{
                   p: 1.5,
                   color: "black",
-                  border: "2px solid #FFEBB7",
-                  borderRadius: "20px",
-                  backgroundColor: "#FFEBB7",
-                  boxShadow: "3px 3px 8px 0px rgba(66, 68, 90, 1)",
+                  border: "2px solid rgba(191, 191, 242, 0.5)",
+                  borderRadius: "13px",
+                  backgroundColor: "rgba(191, 191, 242, 0.3)",
+                  boxShadow: "2px 2px 4px 0px rgba(66, 68, 90, 0.7)",
                   fontWeight: "400",
+                  transition: "0.5s",
+                  "&:hover": {
+                    scale: "1.05",
+                    transition: "0.5s",
+                  },
                 }}
               >
                 SKONTAKTUJ SIĘ

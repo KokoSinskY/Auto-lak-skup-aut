@@ -21,6 +21,18 @@ const CarPartsVendors = () => {
     pauseOnHover: false,
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1.5,
@@ -33,7 +45,7 @@ const CarPartsVendors = () => {
     <Grid mt={2}>
       <Slider {...settings}>
         {data[0].carPartsVendors.map((item) => (
-          <Grid key={item.id} sx={{ pl: 8, pr: 8 }}>
+          <Grid key={item.id} sx={{ pl: 4, pr: 4 }}>
             <Image src={item.src} alt={item.alt} width={200} height={100} />
           </Grid>
         ))}

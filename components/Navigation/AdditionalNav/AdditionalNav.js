@@ -12,9 +12,9 @@ const AdditionalNav = () => {
         <Card
           sx={{
             maxWidth: 380,
-            backgroundColor: "#FFEBB7",
-            p: 0.5,
+            backgroundColor: "rgba(117, 117, 117, 0.5)",
             marginBottom: 5,
+            borderRadius: "40px",
             transition: "0.5s",
             "&:hover": {
               transform: "translateY(-20px)",
@@ -24,11 +24,16 @@ const AdditionalNav = () => {
         >
           <CardMedia component="img" height="450" image="/additionalNavSkup.webp" alt="car" />
           <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <Typography variant="h1" component="div" sx={{ pb: 2 }}>
+            <Typography
+              color="primary"
+              variant="h2"
+              component="div"
+              sx={{ pb: 2, fontSize: "2rem" }}
+            >
               SKUP AUT
             </Typography>
-            <Typography variant="h3" component="div">
-              Kupimy Twój samochód!
+            <Typography variant="h2" component="div">
+              w każdym stanie
             </Typography>
           </CardContent>
         </Card>
@@ -37,9 +42,9 @@ const AdditionalNav = () => {
         <Card
           sx={{
             maxWidth: 380,
-            backgroundColor: "#FFEBB7",
-            p: 0.5,
+            backgroundColor: "rgba(117, 117, 117, 0.5)",
             marginBottom: 5,
+            borderRadius: "40px",
             transition: "0.5s",
             "&:hover": {
               transform: "translateY(-20px)",
@@ -54,7 +59,12 @@ const AdditionalNav = () => {
             alt="car painting"
           />
           <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <Typography variant="h2" component="div" sx={{ pb: 2 }}>
+            <Typography
+              color="primary"
+              variant="h2"
+              component="div"
+              sx={{ pb: 2, fontSize: "2rem" }}
+            >
               Naprawa aut
             </Typography>
             <Typography variant="h2" component="div">

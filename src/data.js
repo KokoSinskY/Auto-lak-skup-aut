@@ -128,7 +128,7 @@ const data = [
       },
       {
         id: 1,
-        src: "/gordon.svg",
+        src: "/gordon.png",
         alt: "Gordon",
       },
       {
@@ -148,7 +148,7 @@ const data = [
       },
       {
         id: 5,
-        src: "/polcar.svg",
+        src: "/polcar.png",
         alt: "Polcar",
       },
     ],
