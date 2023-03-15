@@ -5,6 +5,7 @@ import TypeOfCarsWeBuy from "../components/TypeOfCarsWeBuy/TypeOfCarsWeBuy";
 import ListComponent from "../components/ListComponent";
 import MyCard from "../components/UI/MyCard";
 
+import { Parallax } from "react-parallax";
 import data from "../src/data.js";
 
 const Skup = () => {
@@ -13,7 +14,7 @@ const Skup = () => {
       <header>
         <Header />
       </header>
-      <div className="topBG">
+      <Parallax bgImage="./skupMainBackground.webp" bgImageAlt="background" strength={500}>
         <nav>
           <MainNav />
         </nav>
@@ -25,7 +26,7 @@ const Skup = () => {
             cardContent={data[0].carsData[0].cardContent}
           />
         </section>
-      </div>
+      </Parallax>
       <section>
         <TypeOfCarsWeBuy />
       </section>

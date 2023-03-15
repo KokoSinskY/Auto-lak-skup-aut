@@ -5,6 +5,7 @@ import MainNav from "../components/Navigation/MainNav";
 import TypeOfCarsWeRepair from "../components/TypeOfCarsWeRepair";
 import MyCard from "../components/UI/MyCard";
 
+import { Parallax } from "react-parallax";
 import data from "../src/data";
 
 const Blacharstwo_i_lakiernictwo = () => {
@@ -13,19 +14,23 @@ const Blacharstwo_i_lakiernictwo = () => {
       <header>
         <Header />
       </header>
-      <div className="topBG">
+      <Parallax
+        bgImage="./blacharstwoMainBackground.webp"
+        bgImageAlt="background"
+        strength={500}
+      >
         <nav>
           <MainNav />
         </nav>
         <section>
           <MyCard
             cardHeader={data[0].carsData[1].cardHeader}
-            cardImage={data[0].carsData[0].cardImage}
-            cardImageAlt={data[0].carsData[0].cardImageAlt}
+            cardImage={data[0].carsData[1].cardImage}
+            cardImageAlt={data[0].carsData[1].cardImageAlt}
             cardContent={data[0].carsData[1].cardContent}
           />
         </section>
-      </div>
+      </Parallax>
       <section>
         <TypeOfCarsWeRepair />
       </section>

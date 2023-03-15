@@ -22,16 +22,24 @@ const MainNav = () => {
           <ToolBar sx={{ justifyContent: "center" }}>
             <Stack direction="row" spacing={3}>
               <Link href="/">
-                <Button size="large">Home</Button>
+                <Button size="large" sx={{ fontWeight: 600 }}>
+                  Home
+                </Button>
               </Link>
               <Link href="/skup">
-                <Button size="large">Skup</Button>
+                <Button size="large" sx={{ fontWeight: 600 }}>
+                  Skup
+                </Button>
               </Link>
               <Link href="/blacharstwo-i-lakiernictwo">
-                <Button size="large">Blacharstwo i lakiernictwo</Button>
+                <Button size="large" sx={{ fontWeight: 600 }}>
+                  Blacharstwo i lakiernictwo
+                </Button>
               </Link>
               <Link href="/kontakt">
-                <Button size="large">Kontakt</Button>
+                <Button size="large" sx={{ fontWeight: 600 }}>
+                  Kontakt
+                </Button>
               </Link>
             </Stack>
           </ToolBar>

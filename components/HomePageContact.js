@@ -105,26 +105,28 @@ const HomePageContact = () => {
       </Grid>
       <Divider variant="middle" />
       <Grid container pl={4} mt={4}>
-        <Typography variant="h3" gutterBottom={true}>
-          Po wjeździe w bramę
-        </Typography>
-        <Typography variant="h3" color="primary" pl={0.5} pr={0.5} gutterBottom={true}>
-          prosto
-        </Typography>
-        <Typography variant="h3" gutterBottom={true}>
-          do końca, następnie w
-        </Typography>
-        <Typography variant="h3" color="primary" pl={0.5} pr={0.5} gutterBottom={true}>
-          prawo.
-        </Typography>
-        <Typography variant="h3" gutterBottom={true}>
-          Na końcu drogi po prawej stronie
-        </Typography>
-        <Typography variant="h3" color="primary" pl={0.5} pr={0.5} gutterBottom={true}>
-          drugi
-        </Typography>
-        <Typography variant="h3" gutterBottom={true}>
-          budynek. Zielone drzwi z napisem Auto-Lak.
+        <Typography variant="h3" sx={{ mr: 4, lineHeight: 2 }}>
+          <Typography variant="h3" component="span">
+            Po wjeździe w bramę{" "}
+          </Typography>
+          <Typography color="primary" variant="h3" component="span">
+            prosto{" "}
+          </Typography>
+          <Typography variant="h3" component="span">
+            do końca, następnie w{" "}
+          </Typography>
+          <Typography color="primary" variant="h3" component="span">
+            prawo.{" "}
+          </Typography>
+          <Typography variant="h3" component="span">
+            Na końcu drogi po prawej stronie{" "}
+          </Typography>
+          <Typography color="primary" variant="h3" component="span">
+            drugi{" "}
+          </Typography>
+          <Typography variant="h3" component="span">
+            budynek. Zielone drzwi z napisem Auto-Lak.
+          </Typography>
         </Typography>
       </Grid>
     </Grid>

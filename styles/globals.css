@@ -10,6 +10,12 @@ a {
   background-attachment: fixed;
 }
 
+.topBG {
+  background-image: url("/carPartsBackground.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .homeBottomBG {
   background: rgb(255, 255, 255);
   background: linear-gradient(
