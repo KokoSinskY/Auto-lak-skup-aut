@@ -8,12 +8,20 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material";
 import Link from "next/Link";
 
-const HomePageContact = () => {
+const HomePageContact = (props) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Grid item xl={6} lg={6} md={6} sm={12} mt={isMobile ? 5 : 0} mb={isMobile ? 5 : 0}>
+    <Grid
+      item
+      xl={props.width}
+      lg={props.width}
+      md={props.width}
+      sm={12}
+      mt={isMobile ? 5 : 0}
+      mb={isMobile ? 5 : 0}
+    >
       <Grid container>
         <Typography
           variant="h2"

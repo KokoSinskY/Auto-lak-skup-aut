@@ -45,7 +45,7 @@ const AboutUs = () => {
             <Divider />
           </Box>
           <Box p={2}>
-            <Typography variant="h3" component="h4">
+            <Typography variant="h3" component="h4" lineHeight={1.5}>
               Jesteśmy przedsiębiorstwem z pasją do motoryzacji. Twoje auto ciągle się psuje?
               Jest niesprawne, zmęczone życiem lub rozbite i chcesz się go pozbyć? - Odkupimy
               je. A może Twoje auto jest porysowane, wgniecione, skorodowane lub po stłuczce

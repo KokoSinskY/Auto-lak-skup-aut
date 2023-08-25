@@ -4,9 +4,9 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { GoogleMap, useJsApiLoader, MarkerF, InfoWindowF } from "@react-google-maps/api";
 
-const Map = () => {
+const Map = (props) => {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyBE-tgBICt919T6lwteqv8CF9L1Q8tnA6Q",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY,
   });
 
   const mapLocation = { lat: 51.795831, lng: 19.429909 };
@@ -18,14 +18,10 @@ const Map = () => {
     setShowingInfoWindow(true);
   };
 
-  const divStyle = {
-    background: `white`,
-  };
-
   if (!isLoaded) return <div>Loading...</div>;
 
   return (
-    <Grid container item xl={6} lg={6} md={6} sm={12}>
+    <Grid container item xl={props.width} lg={props.width} md={props.width} sm={12}>
       <GoogleMap zoom={15.5} center={mapLocation} mapContainerClassName="map-container">
         <MarkerF onClick={onMarkerClick} position={mapLocation} />
         {!showingInfoWindow ? null : (

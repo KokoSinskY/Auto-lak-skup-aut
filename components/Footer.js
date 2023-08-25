@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <Grid container sx={{ justifyContent: "center", backgroundColor: "#243763", py: 1.5 }}>
-      <Typography variant="h4" component="div">
+      <Typography variant="h4" component="div" color="white">
         © {footerDate} Copyright: Artur Nawrocki
       </Typography>
     </Grid>

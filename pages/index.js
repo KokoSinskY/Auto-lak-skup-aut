@@ -33,8 +33,8 @@ const HomePage = () => {
         </section>
         <section>
           <Grid container mt={8}>
-            <Map />
-            <HomePageContact />
+            <Map width={6} />
+            <HomePageContact width={6} />
           </Grid>
         </section>
       </main>

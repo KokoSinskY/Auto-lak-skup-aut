@@ -72,3 +72,13 @@ a {
   width: 100%;
   min-height: 50vh;
 }
+
+.image-gallery-slides,
+.image-gallery-thumbnail-image {
+  border-radius: 10px;
+}
+
+.image-gallery-thumbnail {
+  border-radius: 14px;
+  margin-top: 3px;
+}

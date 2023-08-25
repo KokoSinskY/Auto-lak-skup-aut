@@ -4,9 +4,11 @@ import ListComponent from "../components/ListComponent";
 import MainNav from "../components/Navigation/MainNav";
 import TypeOfCarsWeRepair from "../components/TypeOfCarsWeRepair";
 import MyCard from "../components/UI/MyCard";
+import Grid from "@mui/material/Grid";
 
 import { Parallax } from "react-parallax";
 import data from "../src/data";
+import Gallery from "../components/Gallery";
 
 const Blacharstwo_i_lakiernictwo = () => {
   return (
@@ -35,7 +37,10 @@ const Blacharstwo_i_lakiernictwo = () => {
         <TypeOfCarsWeRepair />
       </section>
       <section>
-        <ListComponent header={"Wykonujemy:"} data={data[0].listOfRepairsData} />
+        <Grid container>
+          <ListComponent header={"Wykonujemy:"} data={data[0].listOfRepairsData} />
+          <Gallery folder={"naprawy"} thumbNailFolder={"thumbnailNaprawy"} />
+        </Grid>
       </section>
       <footer>
         <Footer />

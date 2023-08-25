@@ -8,18 +8,18 @@ const TypeOfCarsWeRepair = () => {
     <Box sx={{ backgroundImage: "url('/typeofcarswebuy.webp')" }}>
       <Grid container sx={{ justifyContent: "center", py: 8 }}>
         <SingleRoundedImage
-          src={"/carCircle.webp"}
-          alt={"Car circle"}
+          src={"/sheet-metal-repairs.webp"}
+          alt={"Dented car"}
           content={"Naprawy Blacharskie"}
         />
         <SingleRoundedImage
-          src={"/deliveryCarCircle.webp"}
-          alt={"Delivery car circle"}
+          src={"/auto-painting.webp"}
+          alt={"Painted black car"}
           content={"Lakiernictwo"}
         />
         <SingleRoundedImage
-          src={"/offRoadCarCircle.webp"}
-          alt={"Off-road car circle"}
+          src={"/car_connected_to_laptop.webp"}
+          alt={"Car connected to laptop"}
           content={"Diagnostyka Komputerowa"}
         />
       </Grid>

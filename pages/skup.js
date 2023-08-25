@@ -4,7 +4,8 @@ import MainNav from "../components/Navigation/MainNav";
 import TypeOfCarsWeBuy from "../components/TypeOfCarsWeBuy/TypeOfCarsWeBuy";
 import ListComponent from "../components/ListComponent";
 import MyCard from "../components/UI/MyCard";
-
+import Gallery from "../components/Gallery";
+import Grid from "@mui/material/Grid";
 import { Parallax } from "react-parallax";
 import data from "../src/data.js";
 
@@ -31,7 +32,10 @@ const Skup = () => {
         <TypeOfCarsWeBuy />
       </section>
       <section>
-        <ListComponent header={"Skupujemy auta:"} data={data[0].listOfCarsWeBuyData} />
+        <Grid container>
+          <ListComponent header={"Skupujemy auta:"} data={data[0].listOfCarsWeBuyData} />
+          <Gallery folder={"skup"} thumbNailFolder={"thumbnailSkup"} />
+        </Grid>
       </section>
       <footer>
         <Footer />
