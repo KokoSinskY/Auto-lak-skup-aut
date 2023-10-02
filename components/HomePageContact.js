@@ -54,7 +54,7 @@ const HomePageContact = (props) => {
           variant="h3"
           sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}
         >
-          Łódź, ul. Grunwaldzka 33a
+          91- 337 Łódź, ul. Grunwaldzka 33a
         </Typography>
       </Grid>
       <Grid container pl={4} pt={5}>
