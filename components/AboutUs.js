@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import Link from "next/Link";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (

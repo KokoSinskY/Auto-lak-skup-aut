@@ -6,7 +6,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material";
-import Link from "next/Link";
+import Link from "next/link";
 
 const HomePageContact = (props) => {
   const theme = useTheme();
