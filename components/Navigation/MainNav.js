@@ -2,7 +2,7 @@ import AppBar from "@mui/material/AppBar";
 import ToolBar from "@mui/material/Toolbar";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import Link from "next/Link";
+import Link from "next/link";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material";
 import DrawerComponent from "./DrawerComponent";
