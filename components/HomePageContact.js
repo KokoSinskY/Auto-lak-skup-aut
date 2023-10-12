@@ -118,22 +118,13 @@ const HomePageContact = (props) => {
             Po wjeździe w bramę{" "}
           </Typography>
           <Typography color="primary" variant="h3" component="span">
-            prosto{" "}
+            w prawo{" "}
           </Typography>
           <Typography variant="h3" component="span">
-            do końca, następnie w{" "}
-          </Typography>
-          <Typography color="primary" variant="h3" component="span">
-            prawo.{" "}
+            do końca.{" "}
           </Typography>
           <Typography variant="h3" component="span">
-            Na końcu drogi po prawej stronie{" "}
-          </Typography>
-          <Typography color="primary" variant="h3" component="span">
-            drugi{" "}
-          </Typography>
-          <Typography variant="h3" component="span">
-            budynek. Zielone drzwi z napisem Auto-Lak.
+            Zielone drzwi z napisem Auto-Lak.
           </Typography>
         </Typography>
       </Grid>

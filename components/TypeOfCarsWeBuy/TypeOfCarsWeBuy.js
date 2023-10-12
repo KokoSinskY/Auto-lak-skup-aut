@@ -15,7 +15,7 @@ const TypeOfCarsWeBuy = () => {
       <Grid container sx={{ justifyContent: "center", py: 6 }}>
         <SingleRoundedImage src={"/carCircle.webp"} alt={"Car circle"} content={"Osobowe"} />
         <SingleRoundedImage
-          src={"/deliveryCarCircle.webp"}
+          src={"/deliverycarCircle.webp"}
           alt={"Delivery car circle"}
           content={"Dostawcze"}
         />
