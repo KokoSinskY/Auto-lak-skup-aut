@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Link from "next/link";
+import Image from "next/Image";
 
 const AboutUs = () => {
   return (
@@ -93,7 +94,8 @@ const AboutUs = () => {
         mx={4}
         sx={{ justifyContent: "center" }}
       >
-        <img className="aboutUsImage" src="aboutUsImage.svg" />
+        {/* <img className="aboutUsImage" src="aboutUsImage.svg" /> */}
+        <Image src="aboutUsImage.svg" alt="aboutUs" width={400} height={400} />
       </Grid>
     </Grid>
   );

@@ -52,7 +52,7 @@ const Gallery = (props) => {
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  }, [firebaseConfig, props.folder, props.thumbNailFolder]);
 
   const images = imageUrls.map((image) => ({
     original: image,
