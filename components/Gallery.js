@@ -9,17 +9,17 @@ const Gallery = (props) => {
   const [imageUrls, setImageUrls] = useState([]);
   const [thumbnailImages, setThumbnailImages] = useState([]);
 
-  const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-    authDomain: "skup-aut-381011.firebaseapp.com",
-    projectId: "skup-aut-381011",
-    storageBucket: "skup-aut-381011.appspot.com",
-    messagingSenderId: "220694459192",
-    appId: "1:220694459192:web:23b51a732382287f6047cd",
-    measurementId: "G-V9CBRYS0WB",
-  };
-
   useEffect(() => {
+    const firebaseConfig = {
+      apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+      authDomain: "skup-aut-381011.firebaseapp.com",
+      projectId: "skup-aut-381011",
+      storageBucket: "skup-aut-381011.appspot.com",
+      messagingSenderId: "220694459192",
+      appId: "1:220694459192:web:23b51a732382287f6047cd",
+      measurementId: "G-V9CBRYS0WB",
+    };
+
     const app = initializeApp(firebaseConfig);
     const storage = getStorage(app);
     const imagesRef = ref(storage, props.folder);
