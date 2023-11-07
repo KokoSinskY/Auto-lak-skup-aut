@@ -4,7 +4,7 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Link from "next/link";
-import Image from "next/Image";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
