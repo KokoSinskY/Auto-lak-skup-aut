@@ -124,7 +124,7 @@ const HomePageContact = (props) => {
             do końca.{" "}
           </Typography>
           <Typography variant="h3" component="span">
-            Zielone drzwi z napisem Auto-Lak.
+            Drzwi z napisem Auto-Lak.
           </Typography>
         </Typography>
       </Grid>
